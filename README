@@ -1,0 +1,14 @@
+                               #Readme for build sample ussd application#
+
+In pom.xml file place your ideamart jar files path between <ideamart.lib> </ideamart.lib>
+
+In command line
+      -goto to the project path
+      -type command
+            mvn clean install jetty:run
+            
+Start the simulator and goto the USSD tab
+          -In URL type
+                http://localhost:8999/com.ideamart.sample.ussd/
+          -from second time(i.e for send the menu numbers) onwards change the value of the 
+          USSD Operation Types 'mo-init' to 'mo-cont' 
