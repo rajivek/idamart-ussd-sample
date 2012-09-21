@@ -41,7 +41,12 @@
 			<scope>system</scope>
 			<systemPath>${ideamart.lib}/servlet-api-2.5.jar</systemPath>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>13.0.1</version>
+        </dependency>
+    </dependencies>
 	<build>
 		<finalName>sample-ussd</finalName>
 		<plugins>
