@@ -51,7 +51,7 @@ public final class Messages
         catch (MissingResourceException e)
         {
             LOGGER.log(Level.ALL, "Message key not found: " + key);
-            return '!' + key + '!';
+            return null;
         }
     }
 
