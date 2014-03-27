@@ -2,6 +2,8 @@
 
 In pom.xml file place your ideamart jar files path between <ideamart.lib> </ideamart.lib>
 
+Edit ussdmenu.properties file with your static menu.
+
 In command line
       -goto to the project path
       -type command
