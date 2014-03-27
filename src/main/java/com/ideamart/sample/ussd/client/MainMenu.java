@@ -162,9 +162,12 @@ public class MainMenu implements MoUssdListener {
         return getPropertyValue(PROPERTY_KEY_PREFIX + key);
     }
 
-    private String getPropertyValue(final String key) {
-        //return key;
-        return Messages.getMessage(key);
+  private String getPropertyValue(final String key)
+    {
+    	String message = Messages.getMessage(key);
+    	if (message == null)
+    		return BACK_SERVICE_CODE;
+        return message;
     }
 
     /**
